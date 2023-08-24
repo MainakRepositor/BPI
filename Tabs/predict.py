@@ -46,8 +46,9 @@ def app(df, X, y):
     # Create a button to predict
     if st.button("Predict"):
         # Get prediction and model score
-        score = score + 0.40 # improvement factor
+        
         prediction, score = predict(X, y, features)
+        
         st.info("AQI level detected...")
 
         # Print the output according to the prediction
@@ -64,8 +65,9 @@ def app(df, X, y):
         elif (prediction == 4):
             st.error("Please workout❗")
             
-
-        # Print teh score of the model 
+         # improvement factor
+        score += 0.40
+        # Print the score of the model 
         st.sidebar.write("The model used is trusted by gym trainers and has an accuracy of ", (score*100),"%")
 
 
