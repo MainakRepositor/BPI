@@ -10,7 +10,7 @@ def app():
     st.title("Body Performance Index Detector")
 
     # Add image to the home page
-    st.image('images/home.png')
+    st.image('images/Gym-GIF.gif')
 
     st.subheader("What is BPI ?")
 
