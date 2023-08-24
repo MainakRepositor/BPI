@@ -49,7 +49,7 @@ def app(df, X, y):
         
         prediction, score = predict(X, y, features)
         
-        st.info("AQI level detected...")
+        st.info("Body Performance Index level detected...")
 
         # Print the output according to the prediction
         if (prediction == 1):
