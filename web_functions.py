@@ -12,7 +12,7 @@ def load_data():
     """This function returns the preprocessed data"""
 
     # Load the Diabetes dataset into DataFrame.
-    df = pd.read_csv('aqi.csv')
+    df = pd.read_csv('BPI.csv')
 
    
     # Perform feature and target split
